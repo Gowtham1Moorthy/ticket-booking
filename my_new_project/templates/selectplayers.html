@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>S.NO</th>
+                <th>Player Name</th>
+                <th>Player Position</th>
+                <th>Player Native</th>
+                <th>Player Points</th>
+                <th>ADD PLAYER</th>
+            </tr>
+            {% for i in range(0,row|length) %}
+                    <tr>
+                        <td>{{ i + 1 }}</td>
+                        <td>{{ row[i][1] }}</td>
+                        <td>{{ row[i][4] }}</td>
+                        <td>{{ row[i][2] }}</td>
+                        <td>{{ row[i][3] }}</td>
+                        <td><a href="{{ url_for('manager',id = row[i][0])}}">ADD PLAYERS</a></td>
+                    </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

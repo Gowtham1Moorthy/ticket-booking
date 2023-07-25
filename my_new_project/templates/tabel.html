@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/stylesheet.css">
+        <link rel="stylesheet" href="../static/table.css">
+        <title>GAME TABLE</title>
+    </head>
+    <body style="
+        background-color: #092595;
+        background-image: linear-gradient(to right, #092595, rgb(0, 119, 255));">
+        <div class="above">CRICKET AUCTION</div>
+        <div class="wap">
+            <form method="POST">
+                <div class="players">PLAYER NAME : {{ row[0][1]}} {{ row[0][4]}}</div>
+
+                <div class="players">BITTED FOR  : {{ amount }}</div>
+
+                <div class="players">BITTED TEAM : {{ team[0]}}</div>
+
+
+               <input type="number" name="bit" placeholder="ENTER YOUR BITABLE AMOUNT">
+               <input type="submit" value="BIT">
+            </form>
+        </div>
+    </body>
+</html>

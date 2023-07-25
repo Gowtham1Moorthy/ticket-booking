@@ -1,0 +1,61 @@
+*{
+    background-color:white  ;
+    margin: 0px;
+    padding: 0px;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.head{
+    background-color:#092595;
+    height: 150px;
+}
+.head h{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #092595;
+    font-size: 75px;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top:5%;
+    left: 37%;
+}
+.container { 
+    height: 200px;
+    position: relative;
+ }
+  
+.center {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 36%;
+    
+  }
+.bu{
+    border: none;
+    padding: 30px;
+    font-size: 50px;
+    background-color:#092595 ;
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.bu1{
+    border: none;
+    padding: 30px;
+    padding-left: 53px;
+    padding-right: 51px;
+    font-size: 50px;
+    background-color:#092595 ;
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+}
+button:hover{
+    background-color: white;
+    color: #092595;
+    border: 5px solid #092595;
+}
+
