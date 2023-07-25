@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TICKET BOODING</title>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body style="background-color: #092595;
+        background-image: linear-gradient(to right, #092595, rgb(0, 119, 255));">
+        <div class="wap">
+            <h1>TICKET BOODING</h1>
+            <form action="/bil" method="POST">
+                <select id="option" name='movie' required>
+                    <option>Select movie</option>
+                    <option value="Sardar">Sardar-Rs.150</option>
+                    <option value="Varisu">Varisu-Rs.180</option>
+                    <option value="Vikram">Vikram-Rs.220</option>
+                    <option value="Vaathi">Vaathi-Rs.160</option>
+                </select>
+                <div>
+                    <div>PLECE CLICK YOUR SHOW TIME</div>
+                    <input type="radio" name="movie_time" value="4AM" id="4">
+                    <label for="4">4 AM</label>
+
+                    <input type="radio" name="movie_time" value="10AM" id="10" checked>
+                    <label for="10">10AM</label>
+
+                    <input type="radio" name="movie_time" value="2PM" id="2">
+                    <label for="2">2 PM</label>
+
+                    <input type="radio" name="movie_time" value="6PM" id="6">
+                    <label for="6">6 PM</label>
+                </div>
+
+                <input type="number" placeholder="ENTER NUMBER OF TICKETS" name="number" required><br>
+                <button type="submit">NEXT</button>
+            </form>
+        </div>
+        <script src="../static/index.js"></script>
+        </body>
+    </html>
